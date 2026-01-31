@@ -11,4 +11,9 @@ public class AppTest
 	{
         assertTrue(true, "This test should always pass 2.");
     }
+    @Test
+    public void reverseTestApp()
+	{
+        assertFalse(false, "This test should always pass false.");
+    }
 }
