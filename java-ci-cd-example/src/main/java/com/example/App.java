@@ -9,6 +9,6 @@ public class AppTest
     @Test
     public void testApp()
 	{
-        assertTrue(true, "This test should always pass.");
+        assertTrue(true, "This test should always pass 2.");
     }
 }
