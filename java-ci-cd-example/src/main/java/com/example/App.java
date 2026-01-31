@@ -1,19 +1,19 @@
 package com.example;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-public class AppTest
+/**
+ * Hello world!
+ *
+ */
+public class App 
 {
-    @Test
-    public void testApp()
-	{
-        assertTrue(true, "Fazendo alteraçao no arquivo");
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        App app = new App();
+        System.out.println("2 + 3 = " + app.sum(2, 3));
     }
-    @Test
-    public void reverseTestApp()
-	{
-        assertFalse(false, "This test should always pass false.");
+
+    public int sum(int a, int b) {
+        return a + b;
     }
 }
