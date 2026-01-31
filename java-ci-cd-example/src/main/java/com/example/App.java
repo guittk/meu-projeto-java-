@@ -1,9 +1,14 @@
 package com.example;
 
-public class App 
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+public class AppTest
 {
-    public static void main(String[] args)
-    {
-        System.out.println("Hello World! Testando");
+    @Test
+    public void testApp()
+	{
+        assertTrue(true, "This test should always pass.");
     }
 }
