@@ -9,7 +9,7 @@ public class AppTest
     @Test
     public void testApp()
 	{
-        assertTrue(true, "This test should always pass 2.");
+        assertTrue(true, "Fazendo alteraçao no arquivo");
     }
     @Test
     public void reverseTestApp()
