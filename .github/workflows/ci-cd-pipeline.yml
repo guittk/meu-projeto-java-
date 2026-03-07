@@ -18,11 +18,27 @@ jobs:
 
       - name: Configurar JDK 17
         uses: actions/setup-java@v3
-
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Construir o projeto com Maven
+      - name: Instalar dependências
+        working-directory: java-ci-cd-example
+        run: mvn install -DskipTests
+
+      - name: Rodar testes automatizados
+        working-directory: java-ci-cd-example
+        run: mvn test
+
+      - name: Build da aplicação
         working-directory: java-ci-cd-example
         run: mvn clean package
+
+      - name: Upload do artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-build
+          path: java-ci-cd-example/target/*.jar
+
+      - name: Simular deploy
+        run: echo "Deploy seria realizado automaticamente após aprovação."
