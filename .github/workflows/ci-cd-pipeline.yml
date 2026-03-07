@@ -24,4 +24,5 @@ jobs:
           distribution: 'temurin'
 
       - name: Construir o projeto com Maven
+        working-directory: java-ci-cd-example
         run: mvn clean package
