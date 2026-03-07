@@ -1,6 +1,6 @@
 # Projeto Crud + CI/CD
 
-CRUD simples em java puro de filmes.
+CRUD de Filmes em java puro.
 
 ## O que é testado
 
